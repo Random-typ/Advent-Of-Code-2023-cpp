@@ -3,6 +3,7 @@
 #include <string>
 #include <iostream>
 #include <vector>
+#include <functional>
 
 #define checkFile \
 if (!fs.is_open()) { \

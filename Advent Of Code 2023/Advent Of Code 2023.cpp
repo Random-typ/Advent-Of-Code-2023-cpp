@@ -8,4 +8,6 @@ int main()
     
     day2();
     day2Part2();
+
+    day3();
 }

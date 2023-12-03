@@ -131,6 +131,8 @@
   <ItemGroup>
     <ClCompile Include="Advent Of Code 2023.cpp" />
     <ClCompile Include="day1.cpp" />
+    <ClCompile Include="day2.cpp" />
+    <ClCompile Include="day3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="adventOfCode.h" />

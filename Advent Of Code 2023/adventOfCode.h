@@ -20,3 +20,6 @@ void day2Part2();
 
 void day3();
 void day3Part2();
+
+void day4();
+void day4Part2();

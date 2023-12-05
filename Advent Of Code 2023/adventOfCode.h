@@ -25,3 +25,4 @@ void day4();
 void day4Part2();
 
 void day5();
+void day5Part2();

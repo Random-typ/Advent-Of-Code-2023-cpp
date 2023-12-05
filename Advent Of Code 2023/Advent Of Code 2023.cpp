@@ -16,4 +16,5 @@ int main()
     day4Part2();
 
     day5();
+    day5Part2();
 }

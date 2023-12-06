@@ -5,6 +5,8 @@
 #include <vector>
 #include <regex>
 #include <functional>
+#include <thread>
+//#include <future>
 
 #define checkFile \
 if (!fs.is_open()) { \
@@ -26,3 +28,6 @@ void day4Part2();
 
 void day5();
 void day5Part2();
+
+void day6();
+void day6Part2();

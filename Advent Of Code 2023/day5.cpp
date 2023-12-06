@@ -158,31 +158,44 @@ void day5Part2()
 	maps.push_back(map);
 	// find seed locations and find lowest
 
-	size_t lowest = INT32_MAX;
+	// my <future> header is broken :(
+	//std::vector<std::future<size_t>> seedPoolThreads;
 	for (size_t i = 0; i < seeds.size(); i+=2)
 	{
-		std::cout << i << "\n";
-		for (size_t seed = seeds[i]; seed < seeds[i] + seeds[i + 1]; seed++)// assumes an even number of seeds
-		{
-			size_t value = seed;
-			for (auto& map : maps)
-			{
-				for (auto& mapEntry : map)
-				{
-					if (value < mapEntry[1] || value > mapEntry[1] + mapEntry[2])
-					{
-						continue;
-					}
-					value = value - mapEntry[1] + mapEntry[0];
-					break;
-				}
-			}
-			if (value < lowest)
-			{
-				lowest = value;
-			}
-		}
+		//seedPoolThreads.emplace_back(std::async(std::launch::async, [i, &maps, &seeds]() -> size_t {
+		//	size_t lowest = UINT64_MAX;
+		//	for (size_t seed = seeds[i]; seed < seeds[i] + seeds[i + 1]; seed++)// assumes an even number of seeds
+		//	{
+		//		size_t value = seed;
+		//		for (auto& map : maps)
+		//		{
+		//			for (auto& mapEntry : map)
+		//			{
+		//				if (value < mapEntry[1] || value > mapEntry[1] + mapEntry[2])
+		//				{
+		//					continue;
+		//				}
+		//				value = value - mapEntry[1] + mapEntry[0];
+		//				break;
+		//			}
+		//		}
+		//		if (value < lowest)
+		//		{
+		//			lowest = value;
+		//		}
+		//	}
+		//	return lowest;
+		//	}));	
 	}
 
-	std::cout << "Day5 Part2: " << (lowest - 1/*odd*/) << "\n";
+	//size_t finalLocation = UINT64_MAX;
+	//for (auto& i : seedPoolThreads)
+	//{
+	//	i.wait();
+	//	//if (i.get() < finalLocation)
+	//	//{
+	//	//	finalLocation = i.get();
+	//	//}
+	//}
+	//std::cout << "Day5 Part2: " << (finalLocation - 1/*odd*/) << "\n";
 }

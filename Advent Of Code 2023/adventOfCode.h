@@ -31,3 +31,5 @@ void day5Part2();
 
 void day6();
 void day6Part2();
+
+void day7();

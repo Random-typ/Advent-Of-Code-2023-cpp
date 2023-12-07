@@ -20,4 +20,6 @@ int main()
 
     day6();
     day6Part2();
+
+    day7();
 }

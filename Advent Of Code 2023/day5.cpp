@@ -24,6 +24,7 @@ void day5()
 			seeds.emplace_back(std::stoull(almanac[0].substr(off, end)));
 			break;
 		}
+		off++;
 		seeds.emplace_back(std::stoull(almanac[0].substr(off, end - off)));
 		off = end;
 	}

@@ -6,7 +6,7 @@
 #include <regex>
 #include <functional>
 #include <thread>
-//#include <future>
+#include <future>
 
 #define checkFile \
 if (!fs.is_open()) { \
@@ -33,3 +33,6 @@ void day6();
 void day6Part2();
 
 void day7();
+
+void day8();
+void day8Part2();
